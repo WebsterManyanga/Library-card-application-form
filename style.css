@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Open+Sans:ital,wght@0,400;1,300&family=Yellowtail&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
-
+html {
+  height: 100%;
+}
 body {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 35px;
   background-color: #05386B;
 }
 
@@ -16,14 +21,13 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: #fff;
+  color: #edf5e1;;
 }
 
 .heading__title {
   font-family: 'Exo', sans-serif;
   font-size: 65px;
   letter-spacing: 5px;
-  text-shadow: 1.2px 1.2px #379683;
   cursor: default;
   user-select: none;
 }
@@ -34,4 +38,22 @@ body {
   cursor: default;
   user-select: none;
 
+}
+
+.application {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#5cdb95, #379683);
+  width: 80%;
+  border-radius: 10px;
+  color: #edf5e1;
+
+}
+
+.application__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
 }
