@@ -48,7 +48,7 @@ body {
   gap: 50px;
   width: 80%;
   border-radius: 10px;
-  color: #1A2037;
+  color: #504224;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -76,6 +76,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 0 1vw ;
 }
 
 .user__heading {
@@ -83,8 +84,21 @@ body {
 }
 
 .user__input-label {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+input[type=text] {
+  border-radius: 5px;
+  border: 1px solid;
+}
 
+input[type=text]:focus {
+  background-color: #FFFFE0;
+}
+
+#first-name, #last-name {
+  width: 100%;
+  height: 30px;
+}
