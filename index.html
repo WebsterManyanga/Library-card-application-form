@@ -14,25 +14,29 @@
     <h1 class="heading__title">WEBSTER'S LIBRARY <i class="fa-solid fa-graduation-cap"></i></h1>
     <p class="heading__slogan">Knowledge ought to be free</p>
   </header>
-  <div class="application">
+  <section class="application">
     <h1 class="application__title">Library Card Application Form</h1>
     <form action="" class="user">
       <section class="user__name">
-        <h2>
+        <h2 class="user__heading">
           <label for="first-name">Name</label>
         </h2>
-        <input
+        <div class="user__input-label">
+          <input
           type="text" 
           id="first-name"
           name="first-name"
         >
         <label for="first-name">First Name</label>
-        <input
-        type="text"
-        id="last-name"
-        name="last-name"
-        >
-      <label for="last-name">Last Name</label>
+        </div>
+        <div class="user__input-label">
+          <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          >
+        <label for="last-name">Last Name</label>  
+        </div>
       </section>
       <section class="user__sex">
         <h2>Sex</h2>
@@ -115,6 +119,6 @@
       <input type="checkbox" name="agreement" id="agreement" required>
       <input type="submit" value="Submit">
     </form>
-  </div>
+  </section>
 </body>
 </html>
