@@ -26,6 +26,7 @@
           type="text" 
           id="first-name"
           name="first-name"
+          required
         >
         <label for="first-name">First Name</label>
         </div>
@@ -34,6 +35,7 @@
           type="text"
           id="last-name"
           name="last-name"
+          required
           >
         <label for="last-name">Last Name</label>  
         </div>
@@ -41,7 +43,7 @@
       <section class="user__sex">
         <h2 class="user__heading">Sex</h2>
         <div>
-          <input type="radio" name="sex" id="male">
+          <input type="radio" name="sex" id="male" required>
           <label for="male">Male</label> 
           <input type="radio" name="sex" id="female"> 
           <label for="female">Female</label>            
@@ -56,6 +58,7 @@
           name="birthdate"
           id="birthdate" 
           type="date"
+          required
         >
         <label for="birthdate">Date</label>
         </div>
@@ -63,7 +66,7 @@
       <section class="user__status">
         <h2 class="user__heading">Status</h2>
         <div>
-          <input type="radio" name="status" id="student">
+          <input type="radio" name="status" id="student" required>
           <label for="student">Student</label>
           <input type="radio" name="status" id="staff">
           <label for="staff">Staff</label>      
@@ -73,19 +76,19 @@
         <h2><label for="street">Address</label></h2>
         <div class="address__inputs">
           <div class="user__input-label">
-            <input type="text" name="street" id="street">
+            <input type="text" name="street" id="street" required>
             <label for="street">Street Address</label>  
           </div>
           <div class="user__input-label">
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" required>
             <label for="city">City</label>  
           </div>
           <div class="user__input-label">
-            <input type="text" name="zip" id="zip">
+            <input type="text" name="zip" id="zip" required>
             <label for="zip">Zip/Postal Code</label>    
           </div>
           <div class="user__input-label">
-            <input type="text" name="country" id="country">
+            <input type="text" name="country" id="country" required>
             <label for="country">Country</label>  
           </div>
         </div>
@@ -98,6 +101,7 @@
             id="phone"
             name="phone"
             type="tel"
+            required
           >
         </div>
         <div class="user__input-label">
@@ -106,13 +110,14 @@
             type="email"
             name="email" 
             id="email"
+            required
           >  
         </div>
         </div>
       </section>
       <section class="user__duration">
         <h2>What is the expected duration of the library card?</h2>
-          <input type="radio" name="duration" id="visit">
+          <input type="radio" name="duration" id="visit" required>
           <label for="visit">Single visit</label>
           <input type="radio" name="duration" id="six-months">
           <label for="six-months">6 months</label>
