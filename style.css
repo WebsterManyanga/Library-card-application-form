@@ -72,7 +72,7 @@ body {
   padding: 0 50px;
   gap: 0px 30px;
 }
-.user__name {
+.user__name, .user__sex {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
