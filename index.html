@@ -17,44 +17,72 @@
   <div class="application">
     <h1 class="application__title">Library Card Application Form</h1>
     <form action="" class="user">
-        <label>First Name
-          <input type="text" id="name">
-        </label>
-        <label>Last Name
-          <input type="text" id="surname">
-        </label>
-        <div class="user__sex">
-          <input type="radio" name="sex" id="male">
-          <label for="male">Male</label> 
-          <input type="radio" name="sex" id="female"> 
-          <label for="female">Female</label>          
-        </div>
-        <label>Date of Birth
-          <input type="date">
-        </label>
-        <label>Phone number: 
-          <input type="tel">
-        </label>
-        <label>Email
-          <input type="email">
-        </label>
-        <div class="status">
-          <input type="radio" name="status" id="student">
-          <label for="student">Student</label>
-          <input type="radio" name="status" id="staff">
-          <label for="staff">Staff</label>    
-        </div>
-        <section class="address">
-          <h2>Address</h2>
-          <input type="text" name="street" id="street">
-          <label for="street">Street Address</label>
-          <input type="text" name="city" id="city">
-          <label for="city">City</label>
-          <input type="text" name="zip" id="zip">
-          <label for="zip">Zip/Postal Code</label>
-        </section>
-        <section>
-          <h2>What is the expected duration of the library card?</h2>
+      <section class="user__name">
+        <h2>
+          <label for="first-name">Name</label>
+        </h2>
+        <input
+          type="text" 
+          id="first-name"
+          name="first-name"
+        >
+        <label for="first-name">First Name</label>
+        <input
+        type="text"
+        id="last-name"
+        name="last-name"
+        >
+      <label for="last-name">Last Name</label>
+      </section>
+      <section class="user__sex">
+        <h2>Sex</h2>
+        <input type="radio" name="sex" id="male">
+        <label for="male">Male</label> 
+        <input type="radio" name="sex" id="female"> 
+        <label for="female">Female</label>          
+      </section>
+      <section class="user__birthdate">
+        <h2><label for="birthdate">Date of birth</label></h2>
+        <input
+          name="birthdate"
+          id="birthdate" 
+          type="date"
+        >
+        <label for="birthdate">Date</label>
+      </section>
+      <section class="user__contact">
+        <h2><label for="phone">Contact Information</label></h2>
+        <label for="phone">Phone number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+        >
+        <label for="email">Email</label>
+        <input 
+          type="email"
+          name="email" 
+          id="email"
+        >
+      </section>
+      <section class="user__status">
+        <h2>Status</h2>
+        <input type="radio" name="status" id="student">
+        <label for="student">Student</label>
+        <input type="radio" name="status" id="staff">
+        <label for="staff">Staff</label>    
+      </section>
+      <section class="user__address">
+        <h2><label for="street">Address</label></h2>
+        <input type="text" name="street" id="street">
+        <label for="street">Street Address</label>
+        <input type="text" name="city" id="city">
+        <label for="city">City</label>
+        <input type="text" name="zip" id="zip">
+        <label for="zip">Zip/Postal Code</label>
+      </section>
+      <section class="user__duration">
+        <h2>What is the expected duration of the library card?</h2>
           <input type="radio" name="duration" id="visit">
           <label for="visit">Single visit</label>
           <input type="radio" name="duration" id="six-months">
@@ -63,10 +91,16 @@
           <label for="twelve-months">12 months</label>
           <input type="radio" name="duration" id="more-than-twelve">
           <label for="more-than-twelve">More than 12 months</label>
-        </section>
-        <label for="reason">What's the reason for applying for a library card? Please specify.</label>
-        <textarea name="reason" placeholder="Type here..." cols="50" rows="4"></textarea>
-        <label>How did you hear about us: 
+      </section>
+      <section class="user__reason">
+        <h2>
+          <label for="reason">What's the reason for applying for a library card? Please specify.</label>
+        </h2>
+        <textarea name="reason" placeholder="Type here..." cols="50" rows="4"></textarea>  
+      </section>
+      <section class="user__marketing">
+        <h2>
+          <label>How did you hear about us</label>
           <select name="marketing">
             <option value="">--Please choose an option</option>
             <option value="Search engine">Search engine(Google, Yahoo, etc)</option>
@@ -75,11 +109,11 @@
             <option value="Blog">Blog or publication</option>
             <option value="Other">Other</option>
           </select>
-        </label>
-        <label for="agreement">I understand the full responsibility for the use of this library card. I verify that the information on this form is correct</label>
-        <input type="checkbox" name="agreement" id="agreement" required>
-        <input type="submit" value="Submit">
-
+        </h2>
+      </section>
+      <label for="agreement">I understand the full responsibility for the use of this library card. I verify that the information on this form is correct</label>
+      <input type="checkbox" name="agreement" id="agreement" required>
+      <input type="submit" value="Submit">
     </form>
   </div>
 </body>
