@@ -69,15 +69,16 @@ body {
 .user {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 50px;
-  gap: 0px 30px;
+  padding: 0 50px 100px 50px;
+  gap: 20px 30px;
 }
-.user__name, .user__sex, .user__birthdate {
+.user__name, .user__sex, .user__birthdate, .user__contact, .user__status {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40px 50px;
   gap: 0 1vw ;
 }
+
 
 .user__heading {
   grid-column: 1 / 3;
@@ -89,16 +90,49 @@ body {
   flex-direction: column;
 }
 
-input[type=text], input[type=date] {
+input[type=text], input[type=date], input[type=tel], input[type=email] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   border-radius: 5px;
   border: 1px solid;
+  width: 100%;
+  height: 30px;
+
 }
 
 input:focus {
   background-color: #FFFFE0;
+  outline: none;
 }
 
-#first-name, #last-name, #birthdate {
-  width: 100%;
+.address__inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.agreement {
+  grid-column: 1 / 3;
+}
+
+#agreement {
+  width: 12px
+}
+
+.submit {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  width: 20%;
   height: 30px;
+  border: 1px solid #504224;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #504224;
+  border-radius: 5px;
 }
