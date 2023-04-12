@@ -14,8 +14,73 @@
     <h1 class="heading__title">WEBSTER'S LIBRARY <i class="fa-solid fa-graduation-cap"></i></h1>
     <p class="heading__slogan">Knowledge ought to be free</p>
   </header>
-  <form action="" class="application">
-    <h1 class="application__title">Register</h1>
-  </form>
+  <div class="application">
+    <h1 class="application__title">Library Card Application Form</h1>
+    <form action="" class="user">
+        <label>First Name
+          <input type="text" id="name">
+        </label>
+        <label>Last Name
+          <input type="text" id="surname">
+        </label>
+        <div class="user__sex">
+          <input type="radio" name="sex" id="male">
+          <label for="male">Male</label> 
+          <input type="radio" name="sex" id="female"> 
+          <label for="female">Female</label>          
+        </div>
+        <label>Date of Birth
+          <input type="date">
+        </label>
+        <label>Phone number: 
+          <input type="tel">
+        </label>
+        <label>Email
+          <input type="email">
+        </label>
+        <div class="status">
+          <input type="radio" name="status" id="student">
+          <label for="student">Student</label>
+          <input type="radio" name="status" id="staff">
+          <label for="staff">Staff</label>    
+        </div>
+        <section class="address">
+          <h2>Address</h2>
+          <input type="text" name="street" id="street">
+          <label for="street">Street Address</label>
+          <input type="text" name="city" id="city">
+          <label for="city">City</label>
+          <input type="text" name="zip" id="zip">
+          <label for="zip">Zip/Postal Code</label>
+        </section>
+        <section>
+          <h2>What is the expected duration of the library card?</h2>
+          <input type="radio" name="duration" id="visit">
+          <label for="visit">Single visit</label>
+          <input type="radio" name="duration" id="six-months">
+          <label for="six-months">6 months</label>
+          <input type="radio" name="duration" id="twelve-months">
+          <label for="twelve-months">12 months</label>
+          <input type="radio" name="duration" id="more-than-twelve">
+          <label for="more-than-twelve">More than 12 months</label>
+        </section>
+        <label for="reason">What's the reason for applying for a library card? Please specify.</label>
+        <textarea name="reason" placeholder="Type here..." cols="50" rows="4"></textarea>
+        <label>How did you hear about us: 
+          <select name="marketing">
+            <option value="">--Please choose an option</option>
+            <option value="Search engine">Search engine(Google, Yahoo, etc)</option>
+            <option value="Friend">Recommended by friend</option>
+            <option value="Social media">Social Media</option>
+            <option value="Blog">Blog or publication</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label for="agreement">I understand the full responsibility for the use of this library card. I verify that the information on this form is correct</label>
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <input type="submit" value="Submit">
+
+    </form>
+  </div>
 </body>
 </html>
