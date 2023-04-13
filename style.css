@@ -158,3 +158,17 @@ input:focus {
   color: #504224;
   border-radius: 5px;
 }
+
+
+@media screen and (max-width: 700px) {
+  .application {
+    width: 90%;
+  }
+
+  .user {
+    padding: 0 5vw 50px 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
