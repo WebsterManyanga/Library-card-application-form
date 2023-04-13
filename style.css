@@ -71,7 +71,7 @@ body {
 
 
 .user {
-  padding: 0 5vw 50px 5vw;
+  padding: 0 15vw 50px 5vw;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 20px 4vw;
@@ -111,18 +111,22 @@ input:focus {
   outline: none;
 }
 
-.user__sex-options {
+.user__radio-options {
   display: flex;
   align-items: flex-start;
   gap: 1vw;
 }
 
-.user__sex-option {
+.user__radio-option {
   display: flex;
 }
 
 .user__birthdate > .user__input-label {
   grid-column: 1 / 3;
+}
+
+.user__reason textarea {
+  width: 100%;
 }
 .address__inputs {
   margin-top: 20px;
@@ -146,10 +150,9 @@ input:focus {
 }
 
 #submit-btn {
-  width: 20%;
+  width: 20vw;
   height: 30px;
   border: 1px solid #504224;
-  font-size: 15px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #504224;

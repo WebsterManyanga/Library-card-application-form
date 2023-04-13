@@ -42,12 +42,12 @@
       </section>
       <section class="user__sex">
         <h2 class="user__heading">Sex</h2>
-        <div class="user__sex-options">
-          <div class="user__sex-option">
+        <div class="user__radio-options">
+          <div class="user__radio-option">
             <input type="radio" name="sex" id="male" required>
             <label for="male">Male</label>   
           </div>
-          <div class="user__sex-option">
+          <div class="user__radio-option">
             <input type="radio" name="sex" id="female"> 
             <label for="female">Female</label>              
           </div>
@@ -69,11 +69,15 @@
       </section>
       <section class="user__status">
         <h2 class="user__heading">Status</h2>
-        <div>
-          <input type="radio" name="status" id="student" required>
-          <label for="student">Student</label>
-          <input type="radio" name="status" id="staff">
-          <label for="staff">Staff</label>      
+        <div class="user__radio-options">
+          <div class="user__radio-option">
+            <input type="radio" name="status" id="student" required>
+            <label for="student">Student</label>  
+          </div>
+          <div class="user__radio-option">
+            <input type="radio" name="status" id="staff">
+            <label for="staff">Staff</label>        
+          </div>
         </div>
       </section>
       <section class="user__address">
@@ -100,45 +104,55 @@
       <section class="user__contact">
         <h2 class="user__heading"><label for="phone">Contact Information</label></h2>
         <div class="user__input-label">
-          <label for="phone">Phone number</label>
           <input
             id="phone"
             name="phone"
             type="tel"
             required
           >
+          <label for="phone">Phone number</label>
         </div>
         <div class="user__input-label">
-          <label for="email">Email</label>
           <input 
             type="email"
             name="email" 
             id="email"
             required
           >  
+          <label for="email">Email</label>
         </div>
         </div>
       </section>
       <section class="user__duration">
         <h2>What is the expected duration of the library card?</h2>
-          <input type="radio" name="duration" id="visit" required>
-          <label for="visit">Single visit</label>
-          <input type="radio" name="duration" id="six-months">
-          <label for="six-months">6 months</label>
-          <input type="radio" name="duration" id="twelve-months">
-          <label for="twelve-months">12 months</label>
-          <input type="radio" name="duration" id="more-than-twelve">
-          <label for="more-than-twelve">More than 12 months</label>
+        <div class="user__duration-options">
+          <div class="user__duration-option">
+            <input type="radio" name="duration" id="visit" required>
+            <label for="visit">Single visit</label>  
+          </div>
+          <div class="user__duration-option">
+            <input type="radio" name="duration" id="six-months">
+            <label for="six-months">6 months</label>  
+          </div>
+          <div class="user__duration-option">
+            <input type="radio" name="duration" id="twelve-months">
+            <label for="twelve-months">12 months</label>  
+          </div>
+          <div class="user__duration-option">
+            <input type="radio" name="duration" id="more-than-twelve">
+            <label for="more-than-twelve">More than 12 months</label>  
+          </div>
+        </div>
       </section>
       <section class="user__reason">
         <h2>
           <label for="reason">What's the reason for applying for a library card? Please specify.</label>
         </h2>
-        <textarea name="reason" placeholder="Type here..." cols="50" rows="4"></textarea>  
+        <textarea name="reason" placeholder="Type here..."></textarea>  
       </section>
       <section class="user__marketing">
         <h2>
-          <label>How did you hear about us</label>
+          <label>How did you hear about us?</label>
           <select name="marketing">
             <option value="">--Please choose an option</option>
             <option value="Search engine">Search engine(Google, Yahoo, etc)</option>
