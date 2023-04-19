@@ -145,6 +145,7 @@ input:focus {
 }
  /*---------------------student card preview-------------*/
 #card-preview {
+  position: relative;
   grid-column: 1 / 3;
   margin: 0 auto;
   color: #fff;
@@ -160,6 +161,13 @@ input:focus {
   height: fit-content;
   box-sizing: border-box;
 }
+
+.preview {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+}
+
 #card-preview h1 {
   margin: 0;
 }
