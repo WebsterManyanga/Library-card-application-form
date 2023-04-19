@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/d26df188bf.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <title>Webster's Library</title>
 </head>
 <body>
@@ -14,9 +15,9 @@
     <h1 class="heading__title">WEBSTER'S LIBRARY <i class="fa-solid fa-graduation-cap"></i></h1>
     <p class="heading__slogan">Knowledge ought to be free</p>
   </header>
-  <section class="application">
+  <main class="application">
     <h1 class="application__title">Library Card Application Form</h1>
-    <form action="" class="user">
+    <form action="" class="user" onsubmit="formSubmit()">
       <section class="user__name">
         <h2 class="user__heading">
           <label for="first-name">Name</label>
@@ -163,6 +164,17 @@
           </select>
         </h2>
       </section>
+      <div id="card-preview">
+        <h1>Webster University</h1>
+        <h2>Library Card</h2>
+        <ul>
+          <li>Name: </li>
+          <li>Sex: </li>
+          <li>D.O.B: </li>
+          <li>Status: </li>
+          <li>Expiration date: </li>
+        </ul>
+      </div>
       <div class="agreement">
         <input type="checkbox" name="agreement" id="agreement" required>  
         <label for="agreement">I understand the full responsibility for the use of this library card. I verify that the information on this form is correct</label>
@@ -175,6 +187,6 @@
       >
       </div>
     </form>
-  </section>
+  </main>
 </body>
 </html>
