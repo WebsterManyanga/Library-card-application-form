@@ -13,13 +13,38 @@ function cardPreview(event) {
       studentCardDetails[0].innerHTML = `Name: ${document.getElementById('first-name').value} ${event.target.value}`;
       break;
     case 'male': 
-      studentCardDetails[1].innerHTML = `Sex: Male`;
+      studentCardDetails[1].innerHTML = 'Sex: Male';
       break;
     case 'female': 
-      studentCardDetails[1].innerHTML = `Sex: Female`;
+      studentCardDetails[1].innerHTML = 'Sex: Female';
       break;
     case 'birthdate':
-      studentCardDetails[2].innerHTML = `D.O.B ${event.target.value}`
+      studentCardDetails[2].innerHTML = `D.O.B ${event.target.value}`;
+      break;
+    case 'student': 
+      studentCardDetails[3].innerHTML = 'Status: Student';
+      break;
+    case 'student': 
+      studentCardDetails[3].innerHTML = 'Status: Staff';
+      break;
+    default : 
+      setExpirationDate(sectionId, studentCardDetails);
       break;
   }
+}
+
+function setExpirationDate(sectionId, studentCardDetails) {
+  const exp = new Date(); 
+  if (sectionId === 'visit') {
+    studentCardDetails[4].innerHTML = `Expiration date: ${exp.toJSON().slice(0, 10)}`;
+  } else if (sectionId === 'six-months') {
+    exp.setMonth(exp.getMonth() + 6);
+    studentCardDetails[4].innerHTML = `Expiration date: ${exp.toJSON().slice(0, 10)}`;
+  } else if (sectionId === 'twelve-months') {
+    exp.setMonth(exp.getMonth() + 12);
+    studentCardDetails[4].innerHTML = `Expiration date: ${exp.toJSON().slice(0, 10)}`;
+  } else {
+    studentCardDetails[4].innerHTML = 'Expiration date: Indefinite';
+  }
+
 }

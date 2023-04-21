@@ -91,6 +91,7 @@
               name="status" 
               id="student" 
               required
+              oninput="cardPreview(event)"
             >
             <label for="student">Student</label>  
           </div>
@@ -147,19 +148,40 @@
         <h2>What is the expected duration of the library card?</h2>
         <div class="user__duration-options">
           <div class="user__duration-option">
-            <input type="radio" name="duration" id="visit" required>
+            <input 
+              type="radio" 
+              name="duration" 
+              id="visit" 
+              required
+              onclick="cardPreview(event)"
+            >
             <label for="visit">Single visit</label>  
           </div>
           <div class="user__duration-option">
-            <input type="radio" name="duration" id="six-months">
+            <input 
+              type="radio" 
+              name="duration" 
+              id="six-months"
+              onclick="cardPreview(event)"
+            >
             <label for="six-months">6 months</label>  
           </div>
           <div class="user__duration-option">
-            <input type="radio" name="duration" id="twelve-months">
+            <input 
+              type="radio" 
+              name="duration" 
+              id="twelve-months"
+              onclick="cardPreview(event)"
+            >
             <label for="twelve-months">12 months</label>  
           </div>
           <div class="user__duration-option">
-            <input type="radio" name="duration" id="more-than-twelve">
+            <input 
+              type="radio" 
+              name="duration" 
+              id="more-than-twelve"
+              onclick="cardPreview(event)"
+            >
             <label for="more-than-twelve">More than 12 months</label>  
           </div>
         </div>
