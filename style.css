@@ -222,8 +222,16 @@ input:focus {
   border: 1px solid #504224;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #504224;
+  color: #fff;
   border-radius: 5px;
+  background-color: #05386B;
+  box-shadow: 2px 2px 3px #696969;
+
+}
+
+#submit-btn:hover {
+  color: #05386B;
+  background-color: #fff;
 }
 
 
