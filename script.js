@@ -1,4 +1,17 @@
+// required (*) symbol 
+const inputElements = document.querySelectorAll("input[required], select[required]")
+inputElements.forEach(input => {
+  if (input.type !== 'radio') {
+    input.parentElement.style.position = 'relative';
+    input.nextElementSibling.className = 'required';
+    }
+});
 
+
+//birthdate validation
+const today = new Date();
+const birthdate = document.getElementById('birthdate');
+birthdate.max = today.toJSON().slice(0,10);
 
 function cardPreview(event) {
   const studentCardDetails = document.getElementById('card-preview').lastElementChild.children;
