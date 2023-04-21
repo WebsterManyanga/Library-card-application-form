@@ -16,7 +16,7 @@
   </header>
   <main class="application">
     <h1 class="application__title" id="header">Library Card Application Form</h1>
-    <form action="" class="user" onsubmit="formSubmit()">
+    <form class="user">
       <section class="user__name">
         <h2 class="user__heading">
           <label for="first-name">Name</label>
@@ -28,7 +28,6 @@
           name="first-name"
           required
           oninput="cardPreview(event)"
-          pattern="/^[a-z ,.'-]+$/i"
           maxlength="20"
         >
         <label for="first-name">First Name</label>
@@ -40,7 +39,6 @@
           name="last-name"
           required
           oninput="cardPreview(event)"
-          pattern="/^[a-z ,.'-]+$/i"
           maxlength="20"
           >
         <label for="last-name">Last Name</label>  
@@ -230,10 +228,10 @@
       </div>
       <div class="submit">
         <input 
-        id="submit-btn"
-        type="submit" 
-        value="Submit"
-      >
+          id="submit-btn"
+          type="submit" 
+          value="Submit"
+        >
       </div>
     </form>
   </main>
