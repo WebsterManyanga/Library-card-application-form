@@ -1,0 +1,153 @@
+/*-------------------------main---------------------*/
+.application {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  width: 80%;
+  border-radius: 10px;
+  color: #504224;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.application__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 4vw;
+  letter-spacing: 5px;
+  font-style: italic;
+  background-color: #FFD097;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  user-select: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+
+.user {
+  padding: 0 15vw 50px 5vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px 4vw;
+}
+.user__name, .user__sex, .user__birthdate, .user__contact, .user__status {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40px 50px;
+  gap: 0 1vw ;
+}
+
+.required::after {
+  position: absolute;
+  margin-left:3px;
+  content:' *';
+  color: red;
+  font-size: 10px;
+
+}
+.user__heading {
+  grid-column: 1 / 3;
+  font-size: 18px;
+}
+
+.user__input-label {
+  font-size: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+input[type=text], input[type=date], input[type=tel], input[type=email], select{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 100%;
+  height: 30px;
+
+}
+
+input:focus {
+  background-color: #FFFFE0;
+  outline: none;
+}
+
+.user__radio-options {
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+}
+
+.user__radio-option {
+  display: flex;
+}
+
+.user__birthdate > .user__input-label {
+  grid-column: 1 / 3;
+}
+
+.user__reason textarea {
+  width: 100%;
+}
+.address__inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.user__marketing select {
+  width: 100%;
+  font-size: 0.5em;
+}
+
+.agreement {
+  grid-column: 1 / 3;
+}
+
+#agreement {
+  width: 12px
+}
+.submit {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  width: 20vw;
+  height: 30px;
+  border: 1px solid #504224;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #05386B;
+  box-shadow: 2px 2px 3px #696969;
+
+}
+
+#submit-btn:hover {
+  color: #05386B;
+  background-color: #fff;
+}
+
+
+@media screen and (max-width: 700px) {
+  .application {
+    width: 90%;
+  }
+
+  .user {
+    padding: 0 5vw 50px 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

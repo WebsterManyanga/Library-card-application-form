@@ -1,0 +1,26 @@
+/*------------------Header------------------------*/
+.heading {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #edf5e1;;
+}
+
+.heading__title {
+  font-family: 'Exo', sans-serif;
+  font-size: 5vw;
+  letter-spacing: 5px;
+  cursor: default;
+  user-select: none;
+}
+
+.heading__slogan {
+  font-size: 3.5vw;
+  font-family: 'Yellowtail', cursive;
+  letter-spacing: 2px;
+  cursor: default;
+  user-select: none;
+
+}
