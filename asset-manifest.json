@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Library-card-application-form/static/css/main.3cbc0bf1.css",
+    "main.js": "/Library-card-application-form/static/js/main.85c63f31.js",
+    "static/js/787.b701888c.chunk.js": "/Library-card-application-form/static/js/787.b701888c.chunk.js",
+    "index.html": "/Library-card-application-form/index.html",
+    "main.3cbc0bf1.css.map": "/Library-card-application-form/static/css/main.3cbc0bf1.css.map",
+    "main.85c63f31.js.map": "/Library-card-application-form/static/js/main.85c63f31.js.map",
+    "787.b701888c.chunk.js.map": "/Library-card-application-form/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cbc0bf1.css",
+    "static/js/main.85c63f31.js"
+  ]
+}
