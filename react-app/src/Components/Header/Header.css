@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
 /*------------------Header------------------------*/
 .heading {
   margin-top: 25px;
@@ -9,18 +10,46 @@
 }
 
 .heading__title {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 5vw;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   cursor: default;
   user-select: none;
+  font-weight: 400;
+  position: relative;
 }
 
+.heading__title::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url('../../images/logo.png');
+  background-size:cover;
+  top: 10%;
+  right: -20%;
+  opacity: 0.5;
+  animation: logoSpin 4s linear infinite;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading__title:hover::after {
+  opacity: 1;
+}
 .heading__slogan {
   font-size: 3.5vw;
   font-family: 'Yellowtail', cursive;
   letter-spacing: 2px;
   cursor: default;
   user-select: none;
-
 }

@@ -10,6 +10,7 @@
   color: #504224;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
 }
 
 .application__title {
@@ -42,6 +43,37 @@
   gap: 0 1vw ;
 }
 
+.validity::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.invalid::after {
+  content: '\f057';
+  color: #bb1e10;
+}
+
+.valid::after {
+  content: '\f058';
+  color:  #90EE90;
+}
+
+#birthdate + .validity::after {
+  right: 15px;
+}
+
 .required::after {
   position: absolute;
   margin-left:3px;
@@ -60,6 +92,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 
@@ -71,6 +104,12 @@ input[type=text], input[type=date], input[type=tel], input[type=email], select{
   width: 100%;
   height: 30px;
 
+}
+
+.user__address h2::after {
+  content: '(Optional)';
+  color: #5a5a5a;
+  font-size: 13px;
 }
 
 input:focus {
