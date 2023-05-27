@@ -21,7 +21,7 @@ export default function Main() {
         <Duration />
         <section className="user__reason">
           <h2>
-            <label htmlFor="reason">What's the reason htmlFor applying htmlFor a library card? Please specify.</label>
+            <label htmlFor="reason">What's the reason for applying for a library card? Please specify.</label>
           </h2>
           <textarea name="reason" placeholder="Type here..."></textarea>  
         </section>
