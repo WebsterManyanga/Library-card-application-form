@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Library-card-application-form/static/css/main.878ff960.css",
-    "main.js": "/Library-card-application-form/static/js/main.ae56ef2b.js",
+    "main.js": "/Library-card-application-form/static/js/main.188d25ff.js",
     "static/js/787.b701888c.chunk.js": "/Library-card-application-form/static/js/787.b701888c.chunk.js",
     "static/media/logo.png": "/Library-card-application-form/static/media/logo.8d75ba29dcc3f9522199.png",
     "index.html": "/Library-card-application-form/index.html",
     "main.878ff960.css.map": "/Library-card-application-form/static/css/main.878ff960.css.map",
-    "main.ae56ef2b.js.map": "/Library-card-application-form/static/js/main.ae56ef2b.js.map",
+    "main.188d25ff.js.map": "/Library-card-application-form/static/js/main.188d25ff.js.map",
     "787.b701888c.chunk.js.map": "/Library-card-application-form/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.878ff960.css",
-    "static/js/main.ae56ef2b.js"
+    "static/js/main.188d25ff.js"
   ]
 }
