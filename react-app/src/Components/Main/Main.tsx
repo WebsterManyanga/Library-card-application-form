@@ -40,7 +40,7 @@ export default function Main() {
         </section>
         <div className="agreement">
           <input type="checkbox" name="agreement" id="agreement" required/>  
-          <label htmlFor="agreement">I understand the full responsibility htmlFor the use of this library card. I verify that the inhtmlFormation on this htmlForm is correct</label>
+          <label htmlFor="agreement">I understand the full responsibility for the use of this library card. I verify that the information on this form is correct</label>
         </div>
         <div className="submit">
           <input 
