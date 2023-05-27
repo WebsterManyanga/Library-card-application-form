@@ -17,17 +17,18 @@
   user-select: none;
   font-weight: 400;
   position: relative;
+  width: fit-content;
 }
 
 .heading__title::after {
   position: absolute;
   content: '';
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 8vw;
+  height: 8vw;
   background-image: url('../../images/logo.png');
   background-size:cover;
-  top: 10%;
+  top: 0;
   right: -20%;
   opacity: 0.5;
   animation: logoSpin 4s linear infinite;
